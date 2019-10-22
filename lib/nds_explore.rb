@@ -14,6 +14,6 @@ def print_first_directors_movie_titles
     titles << directors_database[0][:movies][index][:title]
     index += 1
   end
-  results = titles.join('\n')
+  results = titles.join()
   p results
 end
