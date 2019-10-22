@@ -9,11 +9,8 @@ end
 
 def print_first_directors_movie_titles
   index = 0
-  titles = []
   while index < directors_database[0][:movies].length do
-    titles << directors_database[0][:movies][index][:title]
+    p directors_database[0][:movies][index][:title]
     index += 1
   end
-  results = titles.join()
-  p results
 end
